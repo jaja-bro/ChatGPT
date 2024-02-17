@@ -1,5 +1,3 @@
-
-# ChatGPT-Telegram
 ChatGPT client for telegram with python
 
 ## Installing libraries
