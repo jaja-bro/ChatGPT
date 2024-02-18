@@ -32,14 +32,14 @@ async def client(client, message) :
             res = get(url).json()['message']
 
             await client.send_message(
-                chat_id= message.chat.id,
-                text= res,
-                reply_to_message_id= message.id
+                chat_id = message.chat.id,
+                text = res,
+                reply_to_message_id = message.id
             )
             await client.delete_message(message.chat.id, [patience.id])
 
         except Exception as e :
-            try:
+            try :
                 await client.send_message(
                     chat_id= message.chat.id,
                     text= f'Error : {e}',
@@ -48,3 +48,6 @@ async def client(client, message) :
             except : pass            
             
 app.run()
+
+
+
