@@ -9,7 +9,7 @@ pip install requests
 ```
 
 ## Connection
-Put your account's api_id and api_hash in lines 6 and 7
+Put your account's api_id, api_hash and bot_token in lines 6 and 7
 
 ## run project
 ```bash
