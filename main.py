@@ -10,14 +10,14 @@ async def start(client, message):
 @app.on_message(filters.text)
 async def handler(client, message):
     txt = message.text
-    if txt.startswith('چت:'):
+    if txt.startswith('بات:'):
         try:
             patience = await client.send_message(
                 chat_id = message.chat.id,
                 text = 'لطفا صبر کنید...',
                 reply_to_message_id = message.id
             )
-            ask = txt.split('چت:')[1]
+            ask = txt.split('بات:')[1]
             url = f'http://mahrez.iapp.ir/santcoin/index.php?text={ask}'
             res = get(url).json()['message']
 
