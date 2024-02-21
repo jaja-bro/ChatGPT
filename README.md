@@ -1,6 +1,6 @@
 ChatGPT client for telegram with python
 
-## Installing libraries
+### Libraries
 ```bash
 pip install pyrogram
 ```
@@ -8,10 +8,7 @@ pip install pyrogram
 pip install requests
 ```
 
-## Connection
-Put your account's api_id, api_hash and bot_token in lines 6 and 7
-
-## run project
+## running
 ```bash
 python3 ChatGPT.py
 ```
