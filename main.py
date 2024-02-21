@@ -10,7 +10,6 @@ async def start(client, message):
 @app.on_message(filters.text)
 async def handler(client, message):
     txt = message.text
-    print(txt)
     if txt.startswith('چت:'):
         try:
             patience = await client.send_message(
