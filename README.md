@@ -10,5 +10,5 @@ pip install requests
 
 ## running
 ```bash
-python3 ChatGPT.py
+python3 main.py
 ```
